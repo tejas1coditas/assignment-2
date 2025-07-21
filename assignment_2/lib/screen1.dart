@@ -90,7 +90,7 @@ class _Screen1State extends State<Screen1> {
                   children: [
                     for (int i = 0; i < 5; i++)
                       Icon(
-                        i < 4 ? Icons.star : Icons.star_border,
+                        i < 4 ? Icons.star : Icons.star_half,
                         color: Colors.amber,
                         size: 16,
                       ),
