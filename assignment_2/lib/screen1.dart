@@ -510,9 +510,9 @@ class _Screen1State extends State<Screen1> {
                         'assets/Mask Group (1).png',
                         'HRX by Hritik Roshan',
                         'Lorem Ipsum',
-                        '₹1500',
                         '₹2499',
-                        '40%Off',
+                        '₹4999',
+                        '50%Off',
                         '344567',
                       ),
                       Positioned(
