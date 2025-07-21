@@ -247,7 +247,7 @@ class _Screen1State extends State<Screen1> {
                 child: Row(
                   children: [
                     SizedBox(width: 10),
-                    Icon(Icons.search_rounded),
+                    Icon(Icons.search),
                     SizedBox(width: 10),
                     Expanded(
                       child: TextField(
@@ -257,7 +257,7 @@ class _Screen1State extends State<Screen1> {
                         ),
                       ),
                     ),
-                    Icon(Icons.mic),
+                    Icon(Icons.mic_none_rounded),
                     SizedBox(width: 10),
                   ],
                 ),
@@ -742,57 +742,58 @@ class _Screen1State extends State<Screen1> {
               SizedBox(height: 10),
               SizedBox(
                 height: 250,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    ContainerButtons_next(
-                      'assets/Mask Group (2).png',
-                      'IWC Schaffhausen 2021 Pilot Watch "SIHH 2019" 44mm',
-                      '',
-                      '650',
-                      '1599',
-                      '60%off',
-                    ),
-                    SizedBox(width: 7),
-                    Stack(
-                      children: [
-                        Row(
-                          children: [
-                            ContainerButtons_next(
-                              'assets/Mask Group (3).png',
-                              'Labbin White Sneakers For Men and Female',
-                              '',
-                              '650',
-                              '1250',
-                              '70%off',
-                            ),
-                            SizedBox(width: 10),
-                            ContainerButtons_next(
-                              'assets/Mask Group (3).png',
-                              'Labbin White Sneakers For Men and Female',
-                              '',
-                              '650',
-                              '1250',
-                              '70%off',
-                            ),
-                          ],
-                        ),
+                child: Stack(
+                  children:[ ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      ContainerButtons_next(
+                        'assets/Mask Group (2).png',
+                        'IWC Schaffhausen 2021 Pilot Watch "SIHH 2019" 44mm',
+                        '',
+                        '650',
+                        '1599',
+                        '60%off',
+                      ),
+                      SizedBox(width: 7),
+                      Row(
+                        children: [
+                          ContainerButtons_next(
+                            'assets/Mask Group (3).png',
+                            'Labbin White Sneakers For Men and Female',
+                            '',
+                            '650',
+                            '1250',
+                            '70%off',
+                          ),
+                          SizedBox(width: 10),
+                          ContainerButtons_next(
+                            'assets/Mask Group (3).png',
+                            'Labbin White Sneakers For Men and Female',
+                            '',
+                            '650',
+                            '1250',
+                            '70%off',
+                          ),
+                        ],
+                      ),
+                      
+                      
+                      SizedBox(width: 7),
+                    ],
+                  ),
 
-                        Positioned(
-                          bottom: 100,
-                          right: 150,
-                          child: CircleAvatar(
-                            backgroundColor: Colors.grey.shade300,
-                            child: Icon(
-                              Icons.navigate_next,
-                              color: Colors.black,
-                            ),
+                  Positioned(
+                        bottom: 100,
+                        right: 10,
+                        child: CircleAvatar(
+                          backgroundColor: Colors.grey.shade300,
+                          child: Icon(
+                            Icons.navigate_next,
+                            color: Colors.black,
                           ),
                         ),
-                      ],
-                    ),
-                    SizedBox(width: 7),
-                  ],
+                      ),
+                  ]
                 ),
               ),
 
