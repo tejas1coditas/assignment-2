@@ -18,7 +18,7 @@ class _Screen1State extends State<Screen1> {
     );
   }
 
-  Widget ContainerButtons(
+  Widget containerButtons(
     String asset,
     String title,
     String description,
@@ -109,7 +109,7 @@ class _Screen1State extends State<Screen1> {
     );
   }
 
-  Widget ContainerButtons_next(
+  Widget containerButtons_next(
     String asset,
     String title,
     String description,
@@ -217,7 +217,6 @@ class _Screen1State extends State<Screen1> {
                 fontSize: 31,
               ),
             ),
-           
           ],
         ),
 
@@ -500,7 +499,7 @@ class _Screen1State extends State<Screen1> {
               //Container Buttons
               Row(
                 children: [
-                  ContainerButtons(
+                  containerButtons(
                     'assets/Mask Group.png',
                     'Women Printed Kurta',
                     'Lorem Ipsum',
@@ -512,7 +511,7 @@ class _Screen1State extends State<Screen1> {
                   SizedBox(width: 10),
                   Stack(
                     children: [
-                      ContainerButtons(
+                      containerButtons(
                         'assets/Mask Group (1).png',
                         'HRX by Hritik Roshan',
                         'Lorem Ipsum',
@@ -753,7 +752,7 @@ class _Screen1State extends State<Screen1> {
                     ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
-                        ContainerButtons_next(
+                        containerButtons_next(
                           'assets/Mask Group (2).png',
                           'IWC Schaffhausen 2021 Pilot Watch "SIHH 2019" 44mm',
                           '',
@@ -764,7 +763,7 @@ class _Screen1State extends State<Screen1> {
                         SizedBox(width: 7),
                         Row(
                           children: [
-                            ContainerButtons_next(
+                            containerButtons_next(
                               'assets/Mask Group (3).png',
                               'Labbin White Sneakers For Men and Female',
                               '',
@@ -773,7 +772,7 @@ class _Screen1State extends State<Screen1> {
                               '70%off',
                             ),
                             SizedBox(width: 10),
-                            ContainerButtons_next(
+                            containerButtons_next(
                               'assets/Mask Group (3).png',
                               'Labbin White Sneakers For Men and Female',
                               '',
