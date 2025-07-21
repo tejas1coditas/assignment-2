@@ -217,7 +217,7 @@ class _Screen1State extends State<Screen1> {
                 fontSize: 31,
               ),
             ),
-            //Image.asset('assets/appbar_girl_icon')
+           
           ],
         ),
 
@@ -801,7 +801,7 @@ class _Screen1State extends State<Screen1> {
               ),
 
               SizedBox(height: 10),
-
+              //Hot summer Sale
               Container(
                 height: 270,
                 width: 343,
