@@ -192,6 +192,8 @@ class _Screen1State extends State<Screen1> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
+
+      //AppBar
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -238,6 +240,7 @@ class _Screen1State extends State<Screen1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
+                //Text field
                 height: 50,
                 width: double.infinity,
                 decoration: BoxDecoration(
@@ -319,6 +322,7 @@ class _Screen1State extends State<Screen1> {
                 height: 100,
                 padding: EdgeInsets.all(8),
                 child: ListView(
+                  //ListView  of categories
                   scrollDirection: Axis.horizontal,
                   children: [
                     category("assets/beauty.png", "Beauty"),
@@ -335,6 +339,8 @@ class _Screen1State extends State<Screen1> {
               ),
 
               SizedBox(height: 10),
+
+              //banner of shop now
               Stack(
                 children: [
                   Image.asset('assets/Rectangle 48.png'),
@@ -430,9 +436,8 @@ class _Screen1State extends State<Screen1> {
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(10),
                 ),
-
+                //Deal Of the Day
                 child: Row(
-                  //mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     SizedBox(width: 5),
                     Column(
@@ -492,6 +497,7 @@ class _Screen1State extends State<Screen1> {
 
               SizedBox(height: 10),
 
+              //Container Buttons
               Row(
                 children: [
                   ContainerButtons(
@@ -530,6 +536,8 @@ class _Screen1State extends State<Screen1> {
               ),
 
               SizedBox(height: 15),
+
+              //Special Offer banner
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -575,12 +583,7 @@ class _Screen1State extends State<Screen1> {
                 width: 355,
                 color: Colors.white,
 
-                //margin: EdgeInsets.all(10),
-                //padding: EdgeInsets.all(16),
-                // decoration: BoxDecoration(
-                //   color: Colors.white,
-                //   borderRadius: BorderRadius.circular(0),
-                // ),
+                //Flat Heels
                 child: Row(
                   children: [
                     Image.asset(
@@ -681,6 +684,7 @@ class _Screen1State extends State<Screen1> {
                   borderRadius: BorderRadius.circular(10),
                 ),
 
+                //Trending Products
                 child: Row(
                   //mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
@@ -740,60 +744,59 @@ class _Screen1State extends State<Screen1> {
                 ),
               ),
               SizedBox(height: 10),
+
+              //Next Containers
               SizedBox(
                 height: 250,
                 child: Stack(
-                  children:[ ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      ContainerButtons_next(
-                        'assets/Mask Group (2).png',
-                        'IWC Schaffhausen 2021 Pilot Watch "SIHH 2019" 44mm',
-                        '',
-                        '650',
-                        '1599',
-                        '60%off',
-                      ),
-                      SizedBox(width: 7),
-                      Row(
-                        children: [
-                          ContainerButtons_next(
-                            'assets/Mask Group (3).png',
-                            'Labbin White Sneakers For Men and Female',
-                            '',
-                            '650',
-                            '1250',
-                            '70%off',
-                          ),
-                          SizedBox(width: 10),
-                          ContainerButtons_next(
-                            'assets/Mask Group (3).png',
-                            'Labbin White Sneakers For Men and Female',
-                            '',
-                            '650',
-                            '1250',
-                            '70%off',
-                          ),
-                        ],
-                      ),
-                      
-                      
-                      SizedBox(width: 7),
-                    ],
-                  ),
-
-                  Positioned(
-                        bottom: 100,
-                        right: 10,
-                        child: CircleAvatar(
-                          backgroundColor: Colors.grey.shade300,
-                          child: Icon(
-                            Icons.navigate_next,
-                            color: Colors.black,
-                          ),
+                  children: [
+                    ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        ContainerButtons_next(
+                          'assets/Mask Group (2).png',
+                          'IWC Schaffhausen 2021 Pilot Watch "SIHH 2019" 44mm',
+                          '',
+                          '650',
+                          '1599',
+                          '60%off',
                         ),
+                        SizedBox(width: 7),
+                        Row(
+                          children: [
+                            ContainerButtons_next(
+                              'assets/Mask Group (3).png',
+                              'Labbin White Sneakers For Men and Female',
+                              '',
+                              '650',
+                              '1250',
+                              '70%off',
+                            ),
+                            SizedBox(width: 10),
+                            ContainerButtons_next(
+                              'assets/Mask Group (3).png',
+                              'Labbin White Sneakers For Men and Female',
+                              '',
+                              '650',
+                              '1250',
+                              '70%off',
+                            ),
+                          ],
+                        ),
+
+                        SizedBox(width: 7),
+                      ],
+                    ),
+
+                    Positioned(
+                      bottom: 100,
+                      right: 10,
+                      child: CircleAvatar(
+                        backgroundColor: Colors.grey.shade300,
+                        child: Icon(Icons.navigate_next, color: Colors.black),
                       ),
-                  ]
+                    ),
+                  ],
                 ),
               ),
 
