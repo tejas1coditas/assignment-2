@@ -279,8 +279,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.pink.shade300,
                   borderRadius: BorderRadius.circular(10),
                 ),   
-                child: Row(
-                 
+                child: Row(  
                   children: [
                     SizedBox(width: 14),
                     Column(
