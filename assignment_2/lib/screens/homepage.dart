@@ -6,6 +6,7 @@ import 'package:assignment_2/widgets/bottom_bar.dart';
 import 'package:assignment_2/widgets/flat_heels_scandals.dart';
 import 'package:assignment_2/widgets/hot_summer_sale_widget.dart';
 import 'package:assignment_2/widgets/search_field.dart';
+import 'package:assignment_2/widgets/shoes_image_widget.dart';
 import 'package:assignment_2/widgets/shop_now_banner.dart';
 
 import 'package:carousel_slider/carousel_slider.dart';
@@ -196,8 +197,6 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                     ),
-
-
                     SizedBox(width: 65),
                     OutlinedButton(
                       onPressed: () {},
@@ -230,13 +229,8 @@ class _HomePageState extends State<HomePage> {
               ),
 
               SizedBox(height: 10),
-
-             
               DealOfTheDayListScreen(),
-
               SizedBox(height: 15),
-
-           
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -275,20 +269,16 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-
               SizedBox(height: 15),
               FlatHeelsScandals(),
               SizedBox(height: 10),
-
               Container(
                 height: 70,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: Colors.pink.shade300,
                   borderRadius: BorderRadius.circular(10),
-                ),
-
-               
+                ),   
                 child: Row(
                  
                   children: [
@@ -348,63 +338,13 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(height: 10),
-
-            
               TrendingProductsList(),
-
               SizedBox(height: 10),
               //Hot summer Sale
               HotSummerSaleWidget(),
-
               ///////////
               SizedBox(height: 16),
-              Container(
-                color: Colors.white,
-                height: 380,
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(8, 8, 0, 8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Sponsored',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-
-                      SizedBox(height: 10),
-                       Padding(
-                        padding: const EdgeInsets.only(left: 20),
-                        child: ClipRRect(
-                          child: Image.asset(
-                            'assets/shoes.png',
-                            width: 400,
-                            height: 290,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 10),
-                      Row(
-                      
-                        children: [
-                          Text(
-                            "Up to 50% Off",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Spacer(),
-                          Icon(Icons.arrow_forward_ios, size: 16),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+               ShoesImageWidget(),
 
               SizedBox(height: 25),
             ],
