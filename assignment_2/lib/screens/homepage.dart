@@ -169,33 +169,36 @@ class _HomePageState extends State<HomePage> {
                 child: Row(
                   children: [
                     SizedBox(width: 5),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(height: 10),
-                        Text(
-                          "Deal of the Day",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
-                            fontSize: 16,
-                          ),
-                        ),
-                        SizedBox(height: 8),
-                        Row(
-                          children: [
-                            Icon(Icons.alarm, color: Colors.white),
-                            Text(
-                              "22h 55m 20s remaining",
-                              style: TextStyle(color: Colors.white),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(height: 10),
+                          Text(
+                            "Deal of the Day",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 16,
                             ),
-                          ],
-                        ),
-                      ],
+                          ),
+                          SizedBox(height: 6),
+                          Row(
+                            children: [
+                              Icon(Icons.alarm, color: Colors.white),
+                              Text(
+                                "22h 55m 20s remaining",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
 
 
-                    SizedBox(width: 45),
+                    SizedBox(width: 65),
                     OutlinedButton(
                       onPressed: () {},
                       style: OutlinedButton.styleFrom(
@@ -289,7 +292,7 @@ class _HomePageState extends State<HomePage> {
                 child: Row(
                  
                   children: [
-                    SizedBox(width: 5),
+                    SizedBox(width: 14),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -302,7 +305,7 @@ class _HomePageState extends State<HomePage> {
                             fontSize: 16,
                           ),
                         ),
-                        SizedBox(height: 8),
+                        SizedBox(height: 6),
                         Row(
                           children: [
                             Icon(Icons.calendar_month, color: Colors.white),
@@ -314,7 +317,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ],
                     ),
-                    SizedBox(width: 75),
+                    SizedBox(width: 85),
                     OutlinedButton(
                       onPressed: () {},
                       style: OutlinedButton.styleFrom(
