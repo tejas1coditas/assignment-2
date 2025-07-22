@@ -7,7 +7,7 @@ class FlatHeelsScandals extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 178,
-      width: 355,
+      width: double.infinity,
       color: Colors.white,
 
       //Flat Heels
@@ -21,7 +21,7 @@ class FlatHeelsScandals extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 8, 2, 8),
             child: Container(
-              width: 340,
+              width: 350,
               color: Colors.grey.shade100,
               child: Stack(
                 children: [

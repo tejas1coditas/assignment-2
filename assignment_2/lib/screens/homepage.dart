@@ -164,7 +164,7 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 10),
               Container(
                 height: 70,
-                width: 343,
+                width: double.infinity,
                 decoration: BoxDecoration(
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(10),
@@ -244,7 +244,7 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 height: 84,
-                width: 353,
+                width: double.infinity,
                 child: Row(
                   children: [
                     SizedBox(width: 8),
@@ -283,7 +283,7 @@ class _HomePageState extends State<HomePage> {
 
               Container(
                 height: 70,
-                width: 356,
+                width: double.infinity,
                 decoration: BoxDecoration(
                   color: Colors.pink.shade300,
                   borderRadius: BorderRadius.circular(10),
@@ -358,6 +358,8 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 10),
               //Hot summer Sale
               HotSummerSaleWidget(),
+
+              ///////////
               SizedBox(height: 16),
               Container(
                 color: Colors.white,
