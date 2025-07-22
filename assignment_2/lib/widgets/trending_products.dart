@@ -48,7 +48,7 @@ class TrendingProducts extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                 ),
 
-                // SizedBox(height: 4),
+        
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

@@ -14,9 +14,9 @@ class AllFeaturedListScreen extends StatelessWidget {
       height: 100,
       padding: EdgeInsets.all(8),
 
-      /// LIstViewBuilder(), ListViewBuilder.separated()
+    
       child: ListView(
-        //ListView  of categories
+      
         scrollDirection: Axis.horizontal,
         children: [
           AllFeaturedList(

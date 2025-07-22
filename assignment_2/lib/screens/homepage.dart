@@ -19,10 +19,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  /// NAMED PARAMETERS
-
-  /// DO NOT RETURN WIDGETS FROM FUNCTIONS, make stateless or stateful widgets
-  /// naming convention
 
   @override
   Widget build(BuildContext context) {
@@ -350,9 +346,7 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(height: 10),
 
-              //Next Containers
-
-              ///
+            
               TrendingProductsList(),
 
               SizedBox(height: 10),
